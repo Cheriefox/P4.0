@@ -1,0 +1,55 @@
+    .i_menu {
+      height:60px;
+      background-color: lightgrey;
+      border: 0px solid green;
+      padding: 8px;
+      margin: 2px;
+      opacity: 0.9;
+      border-radius: 3px;
+      text-align: center;
+    }
+    .i_smenu{
+      background-color: lightblue;
+      border: 1px solid green;
+      padding: 5px;
+      margin: 2px;
+      opacity: 0.7;
+      border-radius: 12px;
+    }
+    .smenu{visibility:visible;}
+
+    #hdr_cat{background-color: blue;
+      color:white;
+      height:75px;
+      width:230px ;
+      text-align: center;
+      padding-top:10px;
+          }
+      #abreviatura{background-color: blue;
+      color:white;
+      height:75px;
+      width:80px ;
+      text-align: center;
+      padding-top:10px;
+      }
+     #resumen{background-color: blue;
+      color:white;
+      height:75px;
+      width:900px ;
+      text-align: left;
+      padding-left:10px;
+      padding-top:10px;
+      }
+      #contenido{
+      margin:20px;
+      
+      }
+    table, th, td {
+      border: 0px;
+    }
+    a {
+  color: black;
+   }
+   a:link {
+  text-decoration: none;
+}
