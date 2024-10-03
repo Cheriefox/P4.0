@@ -47,6 +47,10 @@ $n_cats=count($tecnologias);
  </head>
  
 <body width="100%">
+
+
+
+
     <div class="container-fluid" >
     <table>
       <tr>  
@@ -63,9 +67,12 @@ $n_cats=count($tecnologias);
       <tr>
         <td width="30%">
         <div id="id_cat">0</div>
+        
+        <div id="orden">0</div>
         </td>
-
+       
         <td widht="10%"><div id="entrar"><a href="#" onclick="cargar('#Contenido','login.php')">INGRESO</a></div></td>
+        
         <td widht="10%"><a href="#" onclick="cargar('#Contenido','registro.html')">REGISTRO</a></td>
         <td width="50%">
         
@@ -142,4 +149,6 @@ $n_cats=count($tecnologias);
 
      }
     ?>
+
+
 </body>
