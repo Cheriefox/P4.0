@@ -65,18 +65,23 @@ function traer_datos($nro=0) // declara el constructor, si trae el numero de per
  
  
  
- static function buscar($str){
-    $sql="select * from cursos where nombre like '%$str%' or contenido like '%$str%' or link like '%$str%' or id_recurso='$str' ";
-    //$rs=mysql_query($sql);
-	$objConn = new Conexion();
-	$rs=$objConn->enlace->query($sql);
-	$est=array();
-	//while($fila=mysql_fetch_assoc($rs) > 0){
-	while($fila=mysqli_fetch_assoc($rs)){
-	  $est[]=$fila;
-	}return $est;
- 
- }
+	static function buscar($str) {
+		$sql = "SELECT * FROM cursos 
+				WHERE nombre_curso LIKE '%$str%' 
+				OR contenido LIKE '%$str%' 
+				OR link_referencia LIKE '%$str%' 
+				OR id_cursos = '$str'";
+		
+		$objConn = new Conexion();
+		$rs = $objConn->enlace->query($sql);
+		$est = array();
+	
+		while ($fila = mysqli_fetch_assoc($rs)) {
+			$est[] = $fila;
+		}
+		return $est;
+	}
+	
  
  static function seleccionar($str){
     $sql="select * from cursos where id_tecnologia = '$str' AND activo = 1 ";
